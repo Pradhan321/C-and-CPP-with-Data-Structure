@@ -1,0 +1,26 @@
+Basically in templates we dont have to declare the data type every time when we need to create a variable it simply means we use function template 
+Syntax:- template<typename X>
+
+if suppose you want one function that return max;
+
+int max(int a,int b)
+{
+  if(a>b)
+  {
+    return a;
+  }
+  return b;
+}
+
+In this particular example we delcare a data type int so we are define the maximum of int value but suppose if i have to check for float type value then we have to delcare this function again but this time the return type should be float type so that is time consuming. to overcome this template is introduced so you just need to create a template 
+template<typename X>
+and 
+X max(X a,X b)
+{
+ if(a>b)
+  {
+    return a;
+  }
+  return b;
+}
+now the template will map your data type according to your requirment;
