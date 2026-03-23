@@ -31,5 +31,12 @@ int main()
   for (it = v2.begin(); it != v2.end(); it++)
     cout << *it << " ";
   cout << endl;  
+
+  //emplace method
+  v1.emplace_back(100);
+  for (int i = 0; i < v1.size(); i++)
+      cout << v1.at(i) << " ";
+    cout << endl;
+  
   return 0;
 }
